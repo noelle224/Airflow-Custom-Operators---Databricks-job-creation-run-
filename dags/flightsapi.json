@@ -1,0 +1,424 @@
+[
+  {
+    "departure": {
+      "offGroundTime": "14:47, Nov 10",
+      "outGateTime": null,
+      "gate": "C30",
+      "departureDateTime": "2025-11-10T14:47:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 10",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "17:55, Nov 10",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-10T17:55:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "airportSlug": "MUC-Munich-Germany",
+      "scheduledTime": "17:55, Nov 10",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  },
+  {
+    "departure": {
+      "offGroundTime": "15:00, Nov 11",
+      "outGateTime": null,
+      "gate": "A3",
+      "departureDateTime": "2025-11-11T15:00:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 11",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "18:11, Nov 11",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-11T18:11:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "airportSlug": "MUC-Munich-Germany",
+      "scheduledTime": "17:55, Nov 11",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  },
+  {
+    "departure": {
+      "offGroundTime": "14:48, Nov 12",
+      "outGateTime": null,
+      "gate": "C32",
+      "departureDateTime": "2025-11-12T14:48:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 12",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "18:01, Nov 12",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-12T18:01:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "airportSlug": "MUC-Munich-Germany",
+      "scheduledTime": "17:55, Nov 12",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  },
+  {
+    "departure": {
+      "offGroundTime": "14:37, Nov 13",
+      "outGateTime": null,
+      "gate": "A1",
+      "departureDateTime": "2025-11-13T14:37:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 13",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "17:46, Nov 13",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-13T17:46:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "airportSlug": "MUC-Munich-Germany",
+      "scheduledTime": "17:55, Nov 13",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  },
+  {
+    "departure": {
+      "offGroundTime": "15:10, Nov 14",
+      "outGateTime": null,
+      "gate": "C28",
+      "departureDateTime": "2025-11-14T15:10:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 14",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "18:17, Nov 14",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-14T18:17:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "scheduledTime": "17:55, Nov 14",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  },
+  {
+    "departure": {
+      "offGroundTime": "15:08, Nov 15",
+      "outGateTime": null,
+      "gate": "C28",
+      "departureDateTime": "2025-11-15T15:08:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 15",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "18:00, Nov 15",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-15T18:00:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "scheduledTime": "17:55, Nov 15",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  },
+  {
+    "departure": {
+      "offGroundTime": "14:56, Nov 16",
+      "outGateTime": null,
+      "gate": "A2",
+      "departureDateTime": "2025-11-16T14:56:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 16",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "17:56, Nov 16",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-16T17:56:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "scheduledTime": "17:55, Nov 16",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  },
+  {
+    "departure": {
+      "offGroundTime": "15:01, Nov 17",
+      "outGateTime": null,
+      "gate": "C30",
+      "departureDateTime": "2025-11-17T15:01:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 17",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "18:04, Nov 17",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-17T18:04:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "scheduledTime": "17:55, Nov 17",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  },
+  {
+    "departure": {
+      "offGroundTime": "17:09, Nov 18",
+      "outGateTime": null,
+      "gate": "B13",
+      "departureDateTime": "2025-11-18T17:09:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 18",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "20:12, Nov 18",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-18T20:12:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "scheduledTime": "17:55, Nov 18",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  },
+  {
+    "departure": {
+      "offGroundTime": "14:50, Nov 19",
+      "outGateTime": null,
+      "gate": "B11",
+      "departureDateTime": "2025-11-19T14:50:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 19",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "17:53, Nov 19",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-19T17:53:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "scheduledTime": "17:55, Nov 19",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  },
+  {
+    "departure": {
+      "offGroundTime": "15:10, Nov 20",
+      "outGateTime": null,
+      "gate": "D48",
+      "departureDateTime": "2025-11-20T15:10:00+04:00",
+      "duration": "6 hr 35 min",
+      "airport": "Abu Dhabi Intl",
+      "airportCity": "Abu Dhabi",
+      "airportCode": "AUH",
+      "airportCountryCode": "AE",
+      "airportSlug": "AUH-Abu_Dhabi-UAE",
+      "scheduledTime": "14:20, Nov 20",
+      "estimatedTime": null,
+      "terminal": "PIER"
+    },
+    "arrival": {
+      "timeRemaining": null,
+      "onGroundTime": null,
+      "inGateTime": "18:17, Nov 20",
+      "gate": null,
+      "baggage": null,
+      "arrivalDateTime": "2025-11-20T18:17:00+01:00",
+      "airport": "Munchen",
+      "airportCity": "Munich",
+      "airportCode": "MUC",
+      "airportCountryCode": "DE",
+      "scheduledTime": "17:55, Nov 20",
+      "estimatedTime": null,
+      "terminal": "T1C"
+    },
+    "aircraft": {
+      "id": 78,
+      "code": "789",
+      "name": "Boeing 787-9 pax"
+    },
+    "status": "Arrived"
+  }
+]

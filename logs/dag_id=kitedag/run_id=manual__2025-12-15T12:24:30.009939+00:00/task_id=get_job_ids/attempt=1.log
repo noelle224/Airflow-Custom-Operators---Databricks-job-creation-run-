@@ -1,0 +1,65 @@
+[2025-12-15T12:24:31.825+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-15T12:24:31.833+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kitedag.get_job_ids manual__2025-12-15T12:24:30.009939+00:00 [queued]>
+[2025-12-15T12:24:31.837+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kitedag.get_job_ids manual__2025-12-15T12:24:30.009939+00:00 [queued]>
+[2025-12-15T12:24:31.837+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-15T12:24:31.851+0000] {taskinstance.py:2330} INFO - Executing <Task(DatabricksGetJobids): get_job_ids> on 2025-12-15 12:24:30.009939+00:00
+[2025-12-15T12:24:31.857+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=25597) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-12-15T12:24:31.858+0000] {standard_task_runner.py:64} INFO - Started process 25601 to run task
+[2025-12-15T12:24:31.858+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'kitedag', 'get_job_ids', 'manual__2025-12-15T12:24:30.009939+00:00', '--job-id', '165', '--raw', '--subdir', 'DAGS_FOLDER/kitedag.py', '--cfg-path', '/tmp/tmpde4t3wf6']
+[2025-12-15T12:24:31.860+0000] {standard_task_runner.py:91} INFO - Job 165: Subtask get_job_ids
+[2025-12-15T12:24:31.899+0000] {task_command.py:426} INFO - Running <TaskInstance: kitedag.get_job_ids manual__2025-12-15T12:24:30.009939+00:00 [running]> on host e9b202c96d39
+[2025-12-15T12:24:31.955+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kitedag' AIRFLOW_CTX_TASK_ID='get_job_ids' AIRFLOW_CTX_EXECUTION_DATE='2025-12-15T12:24:30.009939+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-15T12:24:30.009939+00:00'
+[2025-12-15T12:24:31.956+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-15T12:24:31.960+0000] {base.py:84} INFO - Using connection ID 'databricks_default' for task execution.
+[2025-12-15T12:24:31.960+0000] {logging_mixin.py:188} INFO - Using Databricks Token: ***
+[2025-12-15T12:24:31.961+0000] {DatabricksGetJobids.py:21} ERROR - Failed to get jobs: Cannot mix str and non-str arguments
+[2025-12-15T12:24:31.962+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-15T12:24:31.962+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/connectors/DatabricksGetJobids.py", line 16, in execute
+    job_ids = hook.get_jobslist()
+              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/customHooks/DatabricksHook.py", line 41, in get_jobslist
+    json = self._request('jobs/list', method='GET')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/customHooks/DatabricksHook.py", line 29, in _request
+    response = requests.get(url, headers=headers, params=json)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 367, in prepare
+    self.prepare_url(url, params)
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 480, in prepare_url
+    url = requote_uri(urlunparse([scheme, netloc, path, None, query, fragment]))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/parse.py", line 515, in urlunparse
+    _coerce_args(*components))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/parse.py", line 130, in _coerce_args
+    raise TypeError("Cannot mix str and non-str arguments")
+TypeError: Cannot mix str and non-str arguments
+[2025-12-15T12:24:31.968+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=kitedag, task_id=get_job_ids, run_id=manual__2025-12-15T12:24:30.009939+00:00, execution_date=20251215T122430, start_date=20251215T122431, end_date=20251215T122431
+[2025-12-15T12:24:31.973+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 165 for task get_job_ids (Cannot mix str and non-str arguments; 25601)
+[2025-12-15T12:24:31.998+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-12-15T12:24:32.006+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-15T12:24:32.007+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

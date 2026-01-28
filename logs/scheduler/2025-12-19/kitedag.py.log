@@ -1,0 +1,94 @@
+[2025-12-19T01:08:00.238+0000] {processor.py:161} INFO - Started process (PID=57680) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T01:08:00.240+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T01:08:00.241+0000] {logging_mixin.py:188} INFO - [2025-12-19T01:08:00.240+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T01:08:00.445+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T01:08:00.465+0000] {logging_mixin.py:188} INFO - [2025-12-19T01:08:00.465+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T01:08:00.482+0000] {logging_mixin.py:188} INFO - [2025-12-19T01:08:00.482+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T01:08:00.494+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.283 seconds
+[2025-12-19T02:16:03.799+0000] {processor.py:161} INFO - Started process (PID=57739) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T02:16:03.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T02:16:03.801+0000] {logging_mixin.py:188} INFO - [2025-12-19T02:16:03.800+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T02:16:03.998+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T02:16:04.028+0000] {logging_mixin.py:188} INFO - [2025-12-19T02:16:04.027+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T02:16:04.042+0000] {logging_mixin.py:188} INFO - [2025-12-19T02:16:04.042+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T02:16:04.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.265 seconds
+[2025-12-19T03:53:38.260+0000] {processor.py:161} INFO - Started process (PID=57798) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T03:53:38.260+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T03:53:38.261+0000] {logging_mixin.py:188} INFO - [2025-12-19T03:53:38.261+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T03:53:38.464+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T03:53:38.485+0000] {logging_mixin.py:188} INFO - [2025-12-19T03:53:38.485+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T03:53:38.503+0000] {logging_mixin.py:188} INFO - [2025-12-19T03:53:38.502+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T03:53:38.511+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.260 seconds
+[2025-12-19T05:18:11.766+0000] {processor.py:161} INFO - Started process (PID=57857) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T05:18:11.768+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T05:18:11.769+0000] {logging_mixin.py:188} INFO - [2025-12-19T05:18:11.769+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T05:18:11.980+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T05:18:12.000+0000] {logging_mixin.py:188} INFO - [2025-12-19T05:18:12.000+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T05:18:12.011+0000] {logging_mixin.py:188} INFO - [2025-12-19T05:18:12.011+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T05:18:12.033+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.278 seconds
+[2025-12-19T06:58:36.251+0000] {processor.py:161} INFO - Started process (PID=57916) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T06:58:36.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T06:58:36.254+0000] {logging_mixin.py:188} INFO - [2025-12-19T06:58:36.253+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T06:58:36.429+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T06:58:36.443+0000] {logging_mixin.py:188} INFO - [2025-12-19T06:58:36.442+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T06:58:36.456+0000] {logging_mixin.py:188} INFO - [2025-12-19T06:58:36.456+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T06:58:36.465+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.221 seconds
+[2025-12-19T08:03:01.995+0000] {processor.py:161} INFO - Started process (PID=57975) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T08:03:02.002+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T08:03:02.003+0000] {logging_mixin.py:188} INFO - [2025-12-19T08:03:02.003+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T08:03:02.215+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T08:03:02.233+0000] {logging_mixin.py:188} INFO - [2025-12-19T08:03:02.233+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T08:03:02.247+0000] {logging_mixin.py:188} INFO - [2025-12-19T08:03:02.247+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T08:03:02.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.272 seconds
+[2025-12-19T09:19:28.121+0000] {processor.py:161} INFO - Started process (PID=58034) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T09:19:28.123+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T09:19:28.125+0000] {logging_mixin.py:188} INFO - [2025-12-19T09:19:28.123+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T09:19:28.417+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T09:19:28.453+0000] {logging_mixin.py:188} INFO - [2025-12-19T09:19:28.452+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T09:19:28.483+0000] {logging_mixin.py:188} INFO - [2025-12-19T09:19:28.483+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T09:19:28.504+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.402 seconds
+[2025-12-19T09:57:38.058+0000] {processor.py:161} INFO - Started process (PID=58093) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T09:57:38.060+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T09:57:38.061+0000] {logging_mixin.py:188} INFO - [2025-12-19T09:57:38.061+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T09:57:38.304+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T09:57:38.327+0000] {logging_mixin.py:188} INFO - [2025-12-19T09:57:38.327+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T09:57:38.352+0000] {logging_mixin.py:188} INFO - [2025-12-19T09:57:38.351+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T09:57:38.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.325 seconds
+[2025-12-19T10:46:46.527+0000] {processor.py:161} INFO - Started process (PID=58152) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T10:46:46.530+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T10:46:46.532+0000] {logging_mixin.py:188} INFO - [2025-12-19T10:46:46.532+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T10:46:46.822+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T10:46:46.848+0000] {logging_mixin.py:188} INFO - [2025-12-19T10:46:46.848+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T10:46:46.876+0000] {logging_mixin.py:188} INFO - [2025-12-19T10:46:46.875+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T10:46:46.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.401 seconds
+[2025-12-19T11:37:06.871+0000] {processor.py:161} INFO - Started process (PID=58211) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T11:37:06.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T11:37:06.877+0000] {logging_mixin.py:188} INFO - [2025-12-19T11:37:06.876+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T11:37:07.295+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T11:37:07.339+0000] {logging_mixin.py:188} INFO - [2025-12-19T11:37:07.339+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T11:37:07.386+0000] {logging_mixin.py:188} INFO - [2025-12-19T11:37:07.385+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T11:37:07.419+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.563 seconds
+[2025-12-19T12:40:29.458+0000] {processor.py:161} INFO - Started process (PID=58270) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T12:40:29.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T12:40:29.462+0000] {logging_mixin.py:188} INFO - [2025-12-19T12:40:29.461+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T12:40:29.800+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T12:40:29.826+0000] {logging_mixin.py:188} INFO - [2025-12-19T12:40:29.825+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T12:40:29.854+0000] {logging_mixin.py:188} INFO - [2025-12-19T12:40:29.854+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T12:40:29.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.439 seconds
+[2025-12-19T13:57:44.228+0000] {processor.py:161} INFO - Started process (PID=58329) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T13:57:44.229+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T13:57:44.231+0000] {logging_mixin.py:188} INFO - [2025-12-19T13:57:44.230+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T13:57:44.480+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T13:57:44.503+0000] {logging_mixin.py:188} INFO - [2025-12-19T13:57:44.503+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T13:57:44.524+0000] {logging_mixin.py:188} INFO - [2025-12-19T13:57:44.524+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T13:57:44.538+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.325 seconds
+[2025-12-19T13:58:34.233+0000] {processor.py:161} INFO - Started process (PID=58394) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T13:58:34.277+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T13:58:34.320+0000] {logging_mixin.py:188} INFO - [2025-12-19T13:58:34.317+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T14:41:52.406+0000] {processor.py:161} INFO - Started process (PID=58453) to work on /opt/airflow/dags/kitedag.py
+[2025-12-19T14:41:52.407+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/kitedag.py for tasks to queue
+[2025-12-19T14:41:52.407+0000] {logging_mixin.py:188} INFO - [2025-12-19T14:41:52.407+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/kitedag.py
+[2025-12-19T14:41:52.510+0000] {processor.py:840} INFO - DAG(s) 'kitedag' retrieved from /opt/airflow/dags/kitedag.py
+[2025-12-19T14:41:52.529+0000] {logging_mixin.py:188} INFO - [2025-12-19T14:41:52.529+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-12-19T14:41:52.540+0000] {logging_mixin.py:188} INFO - [2025-12-19T14:41:52.540+0000] {dag.py:3947} INFO - Setting next_dagrun for kitedag to 2025-12-19 00:00:00+00:00, run_after=2025-12-20 00:00:00+00:00
+[2025-12-19T14:41:52.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/kitedag.py took 0.149 seconds

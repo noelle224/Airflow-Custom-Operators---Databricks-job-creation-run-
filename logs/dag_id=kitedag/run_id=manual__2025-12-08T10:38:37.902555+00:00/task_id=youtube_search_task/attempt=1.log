@@ -1,0 +1,36 @@
+[2025-12-08T10:38:40.562+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-08T10:38:40.568+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kitedag.youtube_search_task manual__2025-12-08T10:38:37.902555+00:00 [queued]>
+[2025-12-08T10:38:40.570+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kitedag.youtube_search_task manual__2025-12-08T10:38:37.902555+00:00 [queued]>
+[2025-12-08T10:38:40.571+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-08T10:38:40.575+0000] {taskinstance.py:2330} INFO - Executing <Task(YoutubeAPISearchOperator): youtube_search_task> on 2025-12-08 10:38:37.902555+00:00
+[2025-12-08T10:38:40.578+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=780) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-12-08T10:38:40.579+0000] {standard_task_runner.py:64} INFO - Started process 782 to run task
+[2025-12-08T10:38:40.579+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'kitedag', 'youtube_search_task', 'manual__2025-12-08T10:38:37.902555+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/kitedag.py', '--cfg-path', '/tmp/tmpn12my8mr']
+[2025-12-08T10:38:40.580+0000] {standard_task_runner.py:91} INFO - Job 18: Subtask youtube_search_task
+[2025-12-08T10:38:40.597+0000] {task_command.py:426} INFO - Running <TaskInstance: kitedag.youtube_search_task manual__2025-12-08T10:38:37.902555+00:00 [running]> on host f599d371e488
+[2025-12-08T10:38:40.624+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kitedag' AIRFLOW_CTX_TASK_ID='youtube_search_task' AIRFLOW_CTX_EXECUTION_DATE='2025-12-08T10:38:37.902555+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-08T10:38:37.902555+00:00'
+[2025-12-08T10:38:40.625+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-08T10:38:40.628+0000] {base.py:84} INFO - Using connection ID 'youtube_connection' for task execution.
+[2025-12-08T10:38:41.292+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-08T10:38:41.293+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/connectors/YoutubeAPI_Operator.py", line 39, in execute
+    s3_client = aws_hook.get_client_type("s3", region_name="eu-north-1")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AwsGenericHook.get_client_type() got multiple values for argument 'region_name'
+[2025-12-08T10:38:41.308+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=kitedag, task_id=youtube_search_task, run_id=manual__2025-12-08T10:38:37.902555+00:00, execution_date=20251208T103837, start_date=20251208T103840, end_date=20251208T103841
+[2025-12-08T10:38:41.315+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 18 for task youtube_search_task (AwsGenericHook.get_client_type() got multiple values for argument 'region_name'; 782)
+[2025-12-08T10:38:41.330+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-12-08T10:38:41.343+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-08T10:38:41.345+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,49 @@
+[2025-12-15T12:49:44.187+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-15T12:49:44.192+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kitedag.run_job manual__2025-12-15T12:49:31.135894+00:00 [queued]>
+[2025-12-15T12:49:44.195+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kitedag.run_job manual__2025-12-15T12:49:31.135894+00:00 [queued]>
+[2025-12-15T12:49:44.195+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-15T12:49:44.200+0000] {taskinstance.py:2330} INFO - Executing <Task(DatabricksJobRunOperator): run_job> on 2025-12-15 12:49:31.135894+00:00
+[2025-12-15T12:49:44.202+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=25963) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-12-15T12:49:44.203+0000] {standard_task_runner.py:64} INFO - Started process 25965 to run task
+[2025-12-15T12:49:44.204+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'kitedag', 'run_job', 'manual__2025-12-15T12:49:31.135894+00:00', '--job-id', '192', '--raw', '--subdir', 'DAGS_FOLDER/kitedag.py', '--cfg-path', '/tmp/tmpaodumqzo']
+[2025-12-15T12:49:44.205+0000] {standard_task_runner.py:91} INFO - Job 192: Subtask run_job
+[2025-12-15T12:49:44.220+0000] {task_command.py:426} INFO - Running <TaskInstance: kitedag.run_job manual__2025-12-15T12:49:31.135894+00:00 [running]> on host e9b202c96d39
+[2025-12-15T12:49:44.262+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kitedag' AIRFLOW_CTX_TASK_ID='run_job' AIRFLOW_CTX_EXECUTION_DATE='2025-12-15T12:49:31.135894+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-15T12:49:31.135894+00:00'
+[2025-12-15T12:49:44.263+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-15T12:49:44.263+0000] {DatabricksJobRunOperator.py:20} INFO - Running Databricks job_id: 0
+[2025-12-15T12:49:44.264+0000] {logging_mixin.py:188} INFO - Running jobs with IDs: 0
+[2025-12-15T12:49:44.264+0000] {logging_mixin.py:188} INFO - here
+[2025-12-15T12:49:44.264+0000] {logging_mixin.py:188} INFO - {'job_id': '0', 'notebook_params': {}}
+[2025-12-15T12:49:44.269+0000] {base.py:84} INFO - Using connection ID 'databricks_default' for task execution.
+[2025-12-15T12:49:44.269+0000] {logging_mixin.py:188} INFO - Using Databricks Token: ***
+[2025-12-15T12:49:44.269+0000] {logging_mixin.py:188} INFO - Job Payload: {'job_id': '0', 'notebook_params': {}}
+[2025-12-15T12:49:45.430+0000] {DatabricksJobRunOperator.py:32} ERROR - Failed to run job: 400 Client Error: Bad Request for url: https://dbc-edd8f916-cefb.cloud.databricks.com/api/2.1/jobs/run-now
+[2025-12-15T12:49:45.431+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-15T12:49:45.433+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/connectors/DatabricksJobRunOperator.py", line 24, in execute
+    response_json = hook.run_job(self.job_ids, self.notebook_params)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/customHooks/DatabricksHook.py", line 57, in run_job
+    self._request('jobs/run-now', method='POST', job_payload=payload)
+  File "/opt/airflow/dags/customHooks/DatabricksHook.py", line 33, in _request
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://dbc-edd8f916-cefb.cloud.databricks.com/api/2.1/jobs/run-now
+[2025-12-15T12:49:45.437+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=kitedag, task_id=run_job, run_id=manual__2025-12-15T12:49:31.135894+00:00, execution_date=20251215T124931, start_date=20251215T124944, end_date=20251215T124945
+[2025-12-15T12:49:45.444+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 192 for task run_job (400 Client Error: Bad Request for url: https://dbc-edd8f916-cefb.cloud.databricks.com/api/2.1/jobs/run-now; 25965)
+[2025-12-15T12:49:45.469+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-12-15T12:49:45.482+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-15T12:49:45.484+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

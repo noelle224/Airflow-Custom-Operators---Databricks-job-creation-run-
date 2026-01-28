@@ -1,0 +1,23 @@
+[2025-12-12T12:59:19.687+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-12T12:59:19.692+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kitedag.youtube_search_task manual__2025-12-12T12:59:16.793393+00:00 [queued]>
+[2025-12-12T12:59:19.695+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kitedag.youtube_search_task manual__2025-12-12T12:59:16.793393+00:00 [queued]>
+[2025-12-12T12:59:19.695+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-12T12:59:19.699+0000] {taskinstance.py:2330} INFO - Executing <Task(YoutubeAPISearchOperator): youtube_search_task> on 2025-12-12 12:59:16.793393+00:00
+[2025-12-12T12:59:19.702+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=16875) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-12-12T12:59:19.703+0000] {standard_task_runner.py:64} INFO - Started process 16877 to run task
+[2025-12-12T12:59:19.704+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'kitedag', 'youtube_search_task', 'manual__2025-12-12T12:59:16.793393+00:00', '--job-id', '120', '--raw', '--subdir', 'DAGS_FOLDER/kitedag.py', '--cfg-path', '/tmp/tmplv67z960']
+[2025-12-12T12:59:19.705+0000] {standard_task_runner.py:91} INFO - Job 120: Subtask youtube_search_task
+[2025-12-12T12:59:19.721+0000] {task_command.py:426} INFO - Running <TaskInstance: kitedag.youtube_search_task manual__2025-12-12T12:59:16.793393+00:00 [running]> on host e9b202c96d39
+[2025-12-12T12:59:19.754+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kitedag' AIRFLOW_CTX_TASK_ID='youtube_search_task' AIRFLOW_CTX_EXECUTION_DATE='2025-12-12T12:59:16.793393+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-12T12:59:16.793393+00:00'
+[2025-12-12T12:59:19.756+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-12T12:59:19.761+0000] {base.py:84} INFO - Using connection ID 'youtube_connection' for task execution.
+[2025-12-12T12:59:20.464+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-12-12T12:59:20.465+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2025-12-12T12:59:22.220+0000] {YoutubeAPI_Operator.py:52} INFO - Data uploaded to s3://bhavikabucket22/youtube_data/search_result.json
+[2025-12-12T12:59:22.222+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-12T12:59:22.233+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=kitedag, task_id=youtube_search_task, run_id=manual__2025-12-12T12:59:16.793393+00:00, execution_date=20251212T125916, start_date=20251212T125919, end_date=20251212T125922
+[2025-12-12T12:59:22.262+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-12T12:59:22.277+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-12-12T12:59:22.278+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

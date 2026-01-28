@@ -1,0 +1,22 @@
+[2026-01-08T00:13:14.374+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-01-08T00:13:14.379+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kitedag.get_job_ids scheduled__2026-01-07T00:00:00+00:00 [queued]>
+[2026-01-08T00:13:14.382+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kitedag.get_job_ids scheduled__2026-01-07T00:00:00+00:00 [queued]>
+[2026-01-08T00:13:14.382+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-01-08T00:13:14.386+0000] {taskinstance.py:2330} INFO - Executing <Task(DatabricksGetJobids): get_job_ids> on 2026-01-07 00:00:00+00:00
+[2026-01-08T00:13:14.389+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=60321) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-08T00:13:14.390+0000] {standard_task_runner.py:64} INFO - Started process 60323 to run task
+[2026-01-08T00:13:14.390+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'kitedag', 'get_job_ids', 'scheduled__2026-01-07T00:00:00+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/kitedag.py', '--cfg-path', '/tmp/tmp0wdolavt']
+[2026-01-08T00:13:14.392+0000] {standard_task_runner.py:91} INFO - Job 260: Subtask get_job_ids
+[2026-01-08T00:13:14.410+0000] {task_command.py:426} INFO - Running <TaskInstance: kitedag.get_job_ids scheduled__2026-01-07T00:00:00+00:00 [running]> on host e9b202c96d39
+[2026-01-08T00:13:14.441+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kitedag' AIRFLOW_CTX_TASK_ID='get_job_ids' AIRFLOW_CTX_EXECUTION_DATE='2026-01-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-07T00:00:00+00:00'
+[2026-01-08T00:13:14.442+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-01-08T00:13:14.445+0000] {base.py:84} INFO - Using connection ID 'databricks_default' for task execution.
+[2026-01-08T00:13:14.445+0000] {logging_mixin.py:188} INFO - Using Databricks Token: ***
+[2026-01-08T00:13:16.197+0000] {logging_mixin.py:188} INFO - Fetched Job IDs: [187092103708177, 959528231352]
+[2026-01-08T00:13:16.198+0000] {DatabricksGetJobids.py:17} INFO - job_ids fetched!
+[2026-01-08T00:13:16.198+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-01-08T00:13:16.222+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=kitedag, task_id=get_job_ids, run_id=scheduled__2026-01-07T00:00:00+00:00, execution_date=20260107T000000, start_date=20260108T001314, end_date=20260108T001316
+[2026-01-08T00:13:16.259+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-01-08T00:13:16.266+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,26 @@
+[2025-12-14T00:08:11.181+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-14T00:08:11.187+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kitedag.create_job_2 scheduled__2025-12-13T00:00:00+00:00 [queued]>
+[2025-12-14T00:08:11.191+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kitedag.create_job_2 scheduled__2025-12-13T00:00:00+00:00 [queued]>
+[2025-12-14T00:08:11.191+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-14T00:08:11.196+0000] {taskinstance.py:2330} INFO - Executing <Task(DatabricksJobCreateOperator): create_job_2> on 2025-12-13 00:00:00+00:00
+[2025-12-14T00:08:11.200+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=21771) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-12-14T00:08:11.201+0000] {standard_task_runner.py:64} INFO - Started process 21773 to run task
+[2025-12-14T00:08:11.201+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'kitedag', 'create_job_2', 'scheduled__2025-12-13T00:00:00+00:00', '--job-id', '145', '--raw', '--subdir', 'DAGS_FOLDER/kitedag.py', '--cfg-path', '/tmp/tmp_cvyyw_s']
+[2025-12-14T00:08:11.203+0000] {standard_task_runner.py:91} INFO - Job 145: Subtask create_job_2
+[2025-12-14T00:08:11.225+0000] {task_command.py:426} INFO - Running <TaskInstance: kitedag.create_job_2 scheduled__2025-12-13T00:00:00+00:00 [running]> on host e9b202c96d39
+[2025-12-14T00:08:11.262+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kitedag' AIRFLOW_CTX_TASK_ID='create_job_2' AIRFLOW_CTX_EXECUTION_DATE='2025-12-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-13T00:00:00+00:00'
+[2025-12-14T00:08:11.263+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-14T00:08:11.266+0000] {base.py:84} INFO - Using connection ID 'databricks_default' for task execution.
+[2025-12-14T00:08:11.266+0000] {logging_mixin.py:188} INFO - Using Databricks Token: ***
+[2025-12-14T00:08:11.266+0000] {logging_mixin.py:188} INFO - Job Payload: {'name': 'flight_flattening_transformation_frjson', 'tasks': [{'task_key': 'flatten_flight_data', 'notebook_task': {'notebook_path': '/Workspace/Users/bhavikabharti2@gmail.com/YTDW_RAW/FlightsFlattening'}, 'job_cluster_key': None, 'compute': {'spec': {'kind': 'SERVERLESS'}}}], 'email_notifications': {'on_start': ['bhavikabharti2@gmail.com'], 'on_success': ['bhavikabharti2@gmail.com'], 'on_failure': ['bhavikabharti2@gmail.com']}, 'timeout_seconds': 3600, 'max_concurrent_runs': 1}
+[2025-12-14T00:08:12.947+0000] {DatabricksJobCreateOperator.py:48} INFO - Databricks Job Created Successfully!
+[2025-12-14T00:08:12.948+0000] {DatabricksJobCreateOperator.py:49} INFO - {
+  "job_id": 180633863418876
+}
+[2025-12-14T00:08:12.949+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-14T00:08:12.974+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=kitedag, task_id=create_job_2, run_id=scheduled__2025-12-13T00:00:00+00:00, execution_date=20251213T000000, start_date=20251214T000811, end_date=20251214T000812
+[2025-12-14T00:08:13.002+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-12-14T00:08:13.021+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-12-14T00:08:13.021+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

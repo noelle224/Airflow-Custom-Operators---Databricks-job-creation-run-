@@ -1,0 +1,68 @@
+[2025-12-08T10:15:36.865+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-08T10:15:36.875+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kitedag.youtube_search_task manual__2025-12-08T10:15:32.648757+00:00 [queued]>
+[2025-12-08T10:15:36.880+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kitedag.youtube_search_task manual__2025-12-08T10:15:32.648757+00:00 [queued]>
+[2025-12-08T10:15:36.880+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-08T10:15:36.888+0000] {taskinstance.py:2330} INFO - Executing <Task(YoutubeAPISearchOperator): youtube_search_task> on 2025-12-08 10:15:32.648757+00:00
+[2025-12-08T10:15:36.891+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=461) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-12-08T10:15:36.892+0000] {standard_task_runner.py:64} INFO - Started process 463 to run task
+[2025-12-08T10:15:36.892+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'kitedag', 'youtube_search_task', 'manual__2025-12-08T10:15:32.648757+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/kitedag.py', '--cfg-path', '/tmp/tmpdgkm6lve']
+[2025-12-08T10:15:36.894+0000] {standard_task_runner.py:91} INFO - Job 14: Subtask youtube_search_task
+[2025-12-08T10:15:36.911+0000] {task_command.py:426} INFO - Running <TaskInstance: kitedag.youtube_search_task manual__2025-12-08T10:15:32.648757+00:00 [running]> on host f599d371e488
+[2025-12-08T10:15:36.939+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kitedag' AIRFLOW_CTX_TASK_ID='youtube_search_task' AIRFLOW_CTX_EXECUTION_DATE='2025-12-08T10:15:32.648757+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-08T10:15:32.648757+00:00'
+[2025-12-08T10:15:36.940+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-08T10:15:36.942+0000] {base.py:84} INFO - Using connection ID 'youtube_connection' for task execution.
+[2025-12-08T10:15:37.666+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-08T10:15:37.666+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/connectors/YoutubeAPI_Operator.py", line 37, in execute
+    s3_client.put_object(
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 565, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 1001, in _make_api_call
+    http, parsed_response = self._make_request(
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/client.py", line 1027, in _make_request
+    return self._endpoint.make_request(operation_model, request_dict)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 119, in make_request
+    return self._send_request(request_dict, operation_model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 198, in _send_request
+    request = self.create_request(request_dict, operation_model)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/endpoint.py", line 134, in create_request
+    self._event_emitter.emit(
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 412, in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 256, in emit
+    return self._emit(event_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/hooks.py", line 239, in _emit
+    response = handler(**kwargs)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/signers.py", line 105, in handler
+    return self.sign(operation_name, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/signers.py", line 199, in sign
+    auth.add_auth(request)
+  File "/home/airflow/.local/lib/python3.12/site-packages/botocore/auth.py", line 418, in add_auth
+    raise NoCredentialsError()
+botocore.exceptions.NoCredentialsError: Unable to locate credentials
+[2025-12-08T10:15:37.671+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=kitedag, task_id=youtube_search_task, run_id=manual__2025-12-08T10:15:32.648757+00:00, execution_date=20251208T101532, start_date=20251208T101536, end_date=20251208T101537
+[2025-12-08T10:15:37.677+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 14 for task youtube_search_task (Unable to locate credentials; 463)
+[2025-12-08T10:15:37.701+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-12-08T10:15:37.714+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-12-08T10:15:37.715+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

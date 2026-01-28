@@ -1,0 +1,22 @@
+[2025-12-09T00:01:47.844+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-12-09T00:01:47.849+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kitedag.youtube_search_task scheduled__2025-12-08T00:00:00+00:00 [queued]>
+[2025-12-09T00:01:47.852+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kitedag.youtube_search_task scheduled__2025-12-08T00:00:00+00:00 [queued]>
+[2025-12-09T00:01:47.852+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-12-09T00:01:47.856+0000] {taskinstance.py:2330} INFO - Executing <Task(YoutubeAPISearchOperator): youtube_search_task> on 2025-12-08 00:00:00+00:00
+[2025-12-09T00:01:47.860+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=2372) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-12-09T00:01:47.861+0000] {standard_task_runner.py:64} INFO - Started process 2374 to run task
+[2025-12-09T00:01:47.861+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'kitedag', 'youtube_search_task', 'scheduled__2025-12-08T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/kitedag.py', '--cfg-path', '/tmp/tmpdve3q965']
+[2025-12-09T00:01:47.862+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask youtube_search_task
+[2025-12-09T00:01:47.885+0000] {task_command.py:426} INFO - Running <TaskInstance: kitedag.youtube_search_task scheduled__2025-12-08T00:00:00+00:00 [running]> on host 9073a2501aaf
+[2025-12-09T00:01:47.924+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kitedag' AIRFLOW_CTX_TASK_ID='youtube_search_task' AIRFLOW_CTX_EXECUTION_DATE='2025-12-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-08T00:00:00+00:00'
+[2025-12-09T00:01:47.925+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-12-09T00:01:47.929+0000] {base.py:84} INFO - Using connection ID 'youtube_connection' for task execution.
+[2025-12-09T00:15:32.812+0000] {local_task_job_runner.py:313} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-12-09T00:15:32.826+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-12-09T00:15:32.830+0000] {process_utils.py:132} INFO - Sending 15 to group 2374. PIDs of all processes in the group: [2374]
+[2025-12-09T00:15:32.831+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 2374
+[2025-12-09T00:15:32.833+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-12-09T00:15:32.854+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-12-09T00:15:33.061+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2374, status='terminated', exitcode=0, started='00:01:47') (2374) terminated with exit code 0
