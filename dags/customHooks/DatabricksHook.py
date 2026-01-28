@@ -3,7 +3,7 @@ import json
 from airflow.hooks.base import BaseHook
 
 class DatabricksjobHook(BaseHook):
-    DATABRICKS_INSTANCE = "https://dbc-edd8f916-cefb.cloud.databricks.com"
+    DATABRICKS_INSTANCE = "https://dbc-xxxxxxxx-cefb.cloud.databricks.com"
     BASE_URL = f"{DATABRICKS_INSTANCE}/api/2.1"
 
     def __init__(self, databricks_conn_id="databricks_default"):
